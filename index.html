@@ -8,11 +8,11 @@
       html {
         height: 100%;
       }
+      * {
+        box-sizing: border-box;
+      }
       body {
         font-family: 'Helvetica Neue', sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         height: 100%;
         margin: 15% 0 0 0;
         background: black
@@ -21,10 +21,14 @@
             rgba(16, 43, 86, 0.741),
             rgba(50, 130, 69, 0.191)
           );
-
+        overflow: hidden;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
         color: #fff;
-        overflow: hidden;
       }
       img {
         max-width: 200px;
@@ -48,8 +52,8 @@
       p {
         font-size: 1.2em;
         opacity: 0.9;
+        color: #ffffffda;
       }
-
       @keyframes pulse {
         0% {
           transform: scale(1);
@@ -64,11 +68,13 @@
     </style>
   </head>
   <body>
-    <img src="logo.png" alt="FlightImpact Logo" />
-    <h1>Coming Soon<span>...</span></h1>
-    <p>
-      Elevate your golf game with <strong><i>FlightImpact</i></strong
-      >.
-    </p>
+    <div>
+      <img src="logo.png" alt="FlightImpact Logo" />
+      <h1>Coming Soon<span>...</span></h1>
+      <p>
+        Elevate your golf game with <strong><i>FlightImpact</i></strong
+        >.
+      </p>
+    </div>
   </body>
 </html>
